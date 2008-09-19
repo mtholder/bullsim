@@ -1,0 +1,154 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = BF0326590D78C68B00341F9E /* bullxcode */;
+		activeTarget = 8DD76F620486A84900D96B5E /* bullxcode */;
+		breakpointsGroup = BF0326710D78C79200341F9E /* XCBreakpointsBucket */;
+		codeSenseManager = BF0326690D78C6C000341F9E /* Code sense */;
+		executables = (
+			BF0326590D78C68B00341F9E /* bullxcode */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					573,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 226018955;
+			PBXWorkspaceStateSaveDate = 226018955;
+		};
+		perUserProjectItems = {
+			BF03266B0D78C79000341F9E /* PBXTextBookmark */ = BF03266B0D78C79000341F9E /* PBXTextBookmark */;
+			BF03266E0D78C79200341F9E /* PBXTextBookmark */ = BF03266E0D78C79200341F9E /* PBXTextBookmark */;
+			BF03266F0D78C79200341F9E /* PBXTextBookmark */ = BF03266F0D78C79200341F9E /* PBXTextBookmark */;
+			BF0326700D78C79200341F9E /* PBXTextBookmark */ = BF0326700D78C79200341F9E /* PBXTextBookmark */;
+		};
+		sourceControlManager = BF0326680D78C6C000341F9E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2DF881460D6CDD6700821CA5 /* string_extensions.hpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {788, 2052}}";
+			sepNavSelRange = "{3531, 25}";
+			sepNavVisRect = "{{0, 1779}, {453, 186}}";
+		};
+	};
+	2DF8816A0D6CDD7600821CA5 /* bull_kernel.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1244, 11989}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 1311}, {765, 678}}";
+		};
+	};
+	2DF8817C0D6CDD7600821CA5 /* like_attributes.hpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1052, 2318}}";
+			sepNavSelRange = "{2242, 25}";
+			sepNavVisRect = "{{0, 621}, {765, 678}}";
+		};
+	};
+	8DD76F620486A84900D96B5E /* bullxcode */ = {
+		activeExec = 0;
+		executables = (
+			BF0326590D78C68B00341F9E /* bullxcode */,
+		);
+	};
+	BF0326590D78C68B00341F9E /* bullxcode */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = bullxcode;
+		sourceDirectories = (
+		);
+	};
+	BF0326680D78C6C000341F9E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	BF0326690D78C6C000341F9E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	BF03266B0D78C79000341F9E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: ncl/nxsdefs.h: No such file or directory";
+		fRef = 2DF8817C0D6CDD7600821CA5 /* like_attributes.hpp */;
+		rLen = 1;
+		rLoc = 50;
+		rType = 1;
+	};
+	BF03266E0D78C79200341F9E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2DF8816A0D6CDD7600821CA5 /* bull_kernel.cpp */;
+		name = "bull_kernel.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1125;
+		vrLoc = 2303;
+	};
+	BF03266F0D78C79200341F9E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2DF8816A0D6CDD7600821CA5 /* bull_kernel.cpp */;
+		name = "bull_kernel.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1125;
+		vrLoc = 2303;
+	};
+	BF0326700D78C79200341F9E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2DF8817C0D6CDD7600821CA5 /* like_attributes.hpp */;
+		name = "#include \"ncl/nxsdefs.h\"";
+		rLen = 25;
+		rLoc = 2242;
+		rType = 0;
+		vrLen = 965;
+		vrLoc = 1695;
+	};
+	BF0326710D78C79200341F9E /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+}
