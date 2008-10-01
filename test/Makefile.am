@@ -1,2 +1,2 @@
 installcheck:
-	$(bindir)/bull $(srcdir)/cytb-sim.nex
+	$(bindir)/bullSim $(srcdir)/cytb-sim.nex

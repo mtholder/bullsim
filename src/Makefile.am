@@ -32,9 +32,10 @@ noinst_HEADERS = \
 	util.hpp \
 	xbull.hpp 
 
-bin_PROGRAMS = bull
+bin_PROGRAMS = bullSim bullInfer
 
-bull_SOURCES = \
+
+bullSim_SOURCES = \
 	bull.cpp \
 	bull_io.cpp \
 	bull_kernel.cpp \
@@ -57,5 +58,30 @@ bull_SOURCES = \
 	tree.cpp \
 	util.cpp
 
-bull_LDADD =  $(LDADD) @BULL_LIBS@
+bullSim_LDADD =  $(LDADD) @BULL_LIBS@
+
+bullInfer_SOURCES = \
+	bull.cpp \
+	bull_io.cpp \
+	bull_kernel.cpp \
+	bull_parsers.cpp \
+	char_encoding.cpp \
+	complex.cpp \
+	genetic_codes.cpp \
+	like_attribute_sets.cpp \
+	like_attributes.cpp \
+	lin_alg.cpp \
+	main.cpp \
+	matrices.cpp \
+	model.cpp \
+	node.cpp \
+	parameter.cpp \
+	settings.cpp \
+	ssrf_codon_sub_mod.cpp \
+	string_extensions.cpp \
+	tools.cpp \
+	tree.cpp \
+	util.cpp
+
+bullInfer_LDADD =  $(LDADD) @BULL_LIBS@
 
