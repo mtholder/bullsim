@@ -72,6 +72,18 @@ class SimulateOpts
 		bool automatic; // true to generate the datatypes for each of the outputs automagically
 		std::string tagname;
 };
+	
+// TAH 9/30/2008 Class for inference options
+	
+class InferenceOpts
+{
+	public:
+		InferenceOpts()
+			:nGens(10000)
+			{}
+		unsigned nGens; // # of mcmc generations
+};
+
 
 } //namespace bull
 

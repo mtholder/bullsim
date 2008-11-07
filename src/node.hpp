@@ -47,6 +47,7 @@
 #include "encoded_chars.hpp"
 #include "like_attribute_sets.hpp"
 #include "util.hpp"
+#include "seq_likelihood.h"
 
 #define BLOSPSEUDTERM 4
 #define BLOSFINISHED 1
@@ -74,8 +75,17 @@ class Node{
 		Node *rdes;
 		Node *next;
 		Node *anc;
-	
-	public:
+		
+		// TAH stuff from Chim
+		LeafDataObj * leafData;
+		mutable CLAObj * cla;
+		PMatArrayObj * pMatArray;
+		
+//		double depth;
+//		mutable double edgeLen; // 
+//		const Sample * sample;	
+
+		public:
 
 	bool hasMutation; //temporary simulation hack to identify nodes that have a true synapormorphy  ONLY WORKS if Simulating ONE DATA SET AT A TIME
 
@@ -152,6 +162,26 @@ class Node{
 	void SetBranchLengthsAccordingToNodeHeights(double rootAge);
 	void GuessNumImpossibleBranches(int slen,double &x);
 	//void PrintBranchesInRecursiveOrder();
+	
+	// TAH stuff from Chim
+	void setPMatArray(PMatArrayObj * ld) {
+		pMatArray = ld;
+	}
+	PMatArrayObj * getPMatArray(void) const{
+		return pMatArray;
+	}
+	void setLeafData(LeafDataObj * ld) {
+		leafData = ld;
+	}
+	LeafDataObj * getLeafData(void) const{
+		return leafData;
+	}
+	CLAObj * getCLA(void) const {
+		return cla;
+	}
+	void setCLA(CLAObj *c) const {
+		cla = c;
+	}
 };
 
 	double BranchLengthLinearBrent(double *branchLength,double *below,double *above,double *work,Node *currNode,int *nStatesInThisSite,Model **modArrays,double maxPasses,double delta,int numSitesInProtein);

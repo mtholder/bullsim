@@ -1,6 +1,7 @@
 // This file is part of BULL, a program for phylogenetic simulations
 // most of the code was written by Mark T. Holder.
 
+
 //	This program is for internal use by the lab of Dr. Tandy Warnow only.
 //	Do not redistribute the code.  It is distributed in the hope that it will be useful,
 //	but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -54,8 +55,12 @@ void BullShell::processAssumptionsBlock(NxsAssumptionsBlock *)
 {
 }
 
-void BullShell::processCharactersBlock(NxsCharactersBlockAPI *) 
-{
+void BullShell::processCharactersBlock(NxsCharactersBlockAPI *datachar) 
+{																																			
+	
+	
+	
+
 }
 
 void BullShell::processTaxaBlock(NxsTaxaBlockAPI *taxa)
@@ -118,8 +123,10 @@ void BullShell::processNexusBlocks(BlockReaderList &blocks)
 			NxsString bId = b->GetID();
 			if (bId.EqualsCaseInsensitive("CHARACTERS") || bId.EqualsCaseInsensitive("DATA"))
 				{
-				NxsCharactersBlockAPI * ncb	 = static_cast<NxsCharactersBlockAPI *>(b);
+				NxsCharactersBlockAPI * ncb	 = static_cast<NxsCharactersBlockAPI *>(b); 
 				processCharactersBlock(ncb);
+				//NxsCharactersBlock * charactersBPtr = (NxsCharactersBlock *) b;
+				//updateKernelCharacters(kernel, charactersBPtr);
 				}
 			else if (bId.EqualsCaseInsensitive("TAXA"))
 				{
