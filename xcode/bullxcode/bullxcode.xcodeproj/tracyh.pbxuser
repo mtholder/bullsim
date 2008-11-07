@@ -452,17 +452,17 @@
 	};
 	2DF881430D6CDD6700821CA5 /* ssrf_codon_sub_mod.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1853, 24864}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 25264}}";
 			sepNavSelRange = "{3682, 0}";
-			sepNavVisRange = "{3268, 1807}";
+			sepNavVisRange = "{0, 1801}";
 			sepNavWindowFrame = "{{134, 9}, {802, 801}}";
 		};
 	};
 	2DF881440D6CDD6700821CA5 /* ssrf_codon_sub_mod.hpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1349, 3648}}";
-			sepNavSelRange = "{3617, 52}";
-			sepNavVisRange = "{2645, 2146}";
+			sepNavIntBoundsRect = "{{0, 0}, {1349, 3808}}";
+			sepNavSelRange = "{7794, 0}";
+			sepNavVisRange = "{2015, 1450}";
 			sepNavWindowFrame = "{{272, 77}, {802, 801}}";
 		};
 	};
@@ -518,7 +518,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1095, 2592}}";
 			sepNavSelRange = "{3287, 146}";
-			sepNavVisRange = "{2143, 1002}";
+			sepNavVisRange = "{0, 1512}";
 			sepNavWindowFrame = "{{88, 51}, {802, 801}}";
 		};
 	};
@@ -526,7 +526,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1095, 1808}}";
 			sepNavSelRange = "{2540, 4}";
-			sepNavVisRange = "{2096, 1999}";
+			sepNavVisRange = "{0, 1464}";
 		};
 	};
 	2DF8814E0D6CDD6700821CA5 /* xbull.hpp */ = {
@@ -584,8 +584,8 @@
 	};
 	2DF8816D0D6CDD7600821CA5 /* bull_parsers.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1095, 11392}}";
-			sepNavSelRange = "{2346, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1095, 11424}}";
+			sepNavSelRange = "{23512, 0}";
 			sepNavVisRange = "{1872, 1189}";
 			sepNavWindowFrame = "{{125, 24}, {802, 801}}";
 		};
@@ -618,7 +618,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1095, 3568}}";
 			sepNavSelRange = "{1336, 0}";
-			sepNavVisRange = "{1008, 1884}";
+			sepNavVisRange = "{2158, 1322}";
 		};
 	};
 	2DF881720D6CDD7600821CA5 /* char_encoding.hpp */ = {
@@ -652,16 +652,16 @@
 	};
 	2DF881760D6CDD7600821CA5 /* genetic_codes.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1095, 3200}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1095, 3456}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{3613, 1171}";
+			sepNavVisRange = "{5347, 895}";
 		};
 	};
 	2DF881770D6CDD7600821CA5 /* genetic_codes.hpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1412, 1168}}";
-			sepNavSelRange = "{2989, 6}";
-			sepNavVisRange = "{2111, 1060}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1414, 1757}";
 		};
 	};
 	2DF881780D6CDD7600821CA5 /* jph.hpp */ = {
@@ -1875,16 +1875,16 @@
 	};
 	BF52843A0EC34E4A00F22317 /* seq_likelihood.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1095, 5868}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1095, 5772}}";
 			sepNavSelRange = "{851, 17}";
-			sepNavVisRange = "{0, 1157}";
+			sepNavVisRange = "{0, 1658}";
 		};
 	};
 	BF52843B0EC34E4A00F22317 /* seq_likelihood.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1159, 944}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1095, 944}}";
 			sepNavSelRange = "{1706, 0}";
-			sepNavVisRange = "{744, 976}";
+			sepNavVisRange = "{542, 1178}";
 		};
 	};
 	BF5284980EC3590B00F22317 /* PBXTextBookmark */ = {
