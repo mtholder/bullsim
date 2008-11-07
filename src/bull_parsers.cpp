@@ -73,10 +73,10 @@ void BullShell::HandleCodLikeStartVal(NexusToken& token ) {
 	}
 }
 
-void BullShell::ExecCodLikeStartValCommand(const CodLikeStartOpts &clso)
+void BullShell::ExecCodLikeStartValCommand(const CodLikeStartOpts &clso) // TAH 
 {
 	SSRFCodonSubModSet s;
-	s.initialize(clso.gtrParams, clso.aaFreqs, clso.multipliers, clso.treeScale, clso.genetic_code);
+	s.initialize(clso.gtrParams, clso.aaFreqs, clso.multipliers, clso.treeScale, clso.genetic_code); // these params part of chim.kernel
 	kernel.setModelConstRef(s);
 	s.surrenderThenClear();
 	assert(kernel.hasModel());

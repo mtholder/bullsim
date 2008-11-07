@@ -54,8 +54,12 @@ void BullShell::processAssumptionsBlock(NxsAssumptionsBlock *)
 {
 }
 
-void BullShell::processCharactersBlock(NxsCharactersBlockAPI *) 
-{
+void BullShell::processCharactersBlock(NxsCharactersBlockAPI *datachar) 
+{																																			
+	
+	
+	
+
 }
 
 void BullShell::processTaxaBlock(NxsTaxaBlockAPI *taxa)
@@ -118,8 +122,10 @@ void BullShell::processNexusBlocks(BlockReaderList &blocks)
 			NxsString bId = b->GetID();
 			if (bId.EqualsCaseInsensitive("CHARACTERS") || bId.EqualsCaseInsensitive("DATA"))
 				{
-				NxsCharactersBlockAPI * ncb	 = static_cast<NxsCharactersBlockAPI *>(b);
+				NxsCharactersBlockAPI * ncb	 = static_cast<NxsCharactersBlockAPI *>(b); 
 				processCharactersBlock(ncb);
+				//NxsCharactersBlock * charactersBPtr = (NxsCharactersBlock *) b;
+				//updateKernelCharacters(kernel, charactersBPtr);
 				}
 			else if (bId.EqualsCaseInsensitive("TAXA"))
 				{
@@ -301,7 +307,7 @@ void BullShell::Run(const char *infn)
 			cmd.append(NxsString::GetEscaped(sfn));
 			handleOneLineCommand(cmd);
 		}
-		while ( !quit_now ) {
+		while ( !quit_now ) { // TAH 9/30/2008 this is broken changes "exec filen.nex" to "; exec; end;"
 			cerr << endl;
 			cerr << "BullShell> ";
 			cmd.clear();

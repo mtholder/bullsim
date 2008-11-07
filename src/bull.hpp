@@ -28,6 +28,7 @@
 #include "ncl/nxsreader.h"
 class NxsAssumptionsBlock;
 class NxsCharactersBlockAPI;
+class NxsCharactersBlock; // TAH
 class NxsTaxaBlockAPI;
 class NxsTreesBlockAPI;
 
@@ -90,7 +91,7 @@ class BullShell:  public NxsBlock, public BullListener
 		void processNexusBlocks(std::list<NxsBlock*> &);
 		
 		void processAssumptionsBlock(NxsAssumptionsBlock *);
-		void processCharactersBlock(NxsCharactersBlockAPI *);
+		void processCharactersBlock(NxsCharactersBlockAPI *); 
 		void processTaxaBlock(NxsTaxaBlockAPI *);
 		void processTreesBlock(NxsTreesBlockAPI *);
 		bool readFile(const std::string &filepath, const bool treesBlockOnly = false);

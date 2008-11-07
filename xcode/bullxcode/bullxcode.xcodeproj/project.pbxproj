@@ -56,6 +56,8 @@
 		2DF881970D6CDD7600821CA5 /* lin_alg.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DF8817E0D6CDD7600821CA5 /* lin_alg.hpp */; };
 		2DF881980D6CDD7600821CA5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8817F0D6CDD7600821CA5 /* main.cpp */; };
 		8DD76F6A0486A84900D96B5E /* bullxcode.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* bullxcode.1 */; };
+		BF52843C0EC34E4A00F22317 /* seq_likelihood.c in Sources */ = {isa = PBXBuildFile; fileRef = BF52843A0EC34E4A00F22317 /* seq_likelihood.c */; };
+		BF5285150EC39D8800F22317 /* bull_mcmc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5285140EC39D8800F22317 /* bull_mcmc.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,7 +132,7 @@
 		2DF8816C0D6CDD7600821CA5 /* bull_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; path = bull_listener.hpp; sourceTree = "<group>"; };
 		2DF8816D0D6CDD7600821CA5 /* bull_parsers.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = bull_parsers.cpp; sourceTree = "<group>"; };
 		2DF8816E0D6CDD7600821CA5 /* bull_parsers.hpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; path = bull_parsers.hpp; sourceTree = "<group>"; };
-		2DF8816F0D6CDD7600821CA5 /* bull.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = bull.cpp; sourceTree = "<group>"; };
+		2DF8816F0D6CDD7600821CA5 /* bull.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; path = bull.cpp; sourceTree = "<group>"; };
 		2DF881700D6CDD7600821CA5 /* bull.hpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; path = bull.hpp; sourceTree = "<group>"; };
 		2DF881710D6CDD7600821CA5 /* char_encoding.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = char_encoding.cpp; sourceTree = "<group>"; };
 		2DF881720D6CDD7600821CA5 /* char_encoding.hpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; path = char_encoding.hpp; sourceTree = "<group>"; };
@@ -147,7 +149,11 @@
 		2DF8817D0D6CDD7600821CA5 /* lin_alg.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = lin_alg.cpp; sourceTree = "<group>"; };
 		2DF8817E0D6CDD7600821CA5 /* lin_alg.hpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; path = lin_alg.hpp; sourceTree = "<group>"; };
 		2DF8817F0D6CDD7600821CA5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		8DD76F6C0486A84900D96B5E /* bullxcode */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = bullxcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD76F6C0486A84900D96B5E /* bullxcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bullxcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF52843A0EC34E4A00F22317 /* seq_likelihood.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = seq_likelihood.c; sourceTree = "<group>"; };
+		BF52843B0EC34E4A00F22317 /* seq_likelihood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seq_likelihood.h; sourceTree = "<group>"; };
+		BF5285130EC39D8800F22317 /* bull_mcmc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bull_mcmc.h; sourceTree = "<group>"; };
+		BF5285140EC39D8800F22317 /* bull_mcmc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bull_mcmc.cpp; sourceTree = "<group>"; };
 		C6859E8B029090EE04C91782 /* bullxcode.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = bullxcode.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +181,8 @@
 		08FB7795FE84155DC02AAC07 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BF52843A0EC34E4A00F22317 /* seq_likelihood.c */,
+				BF52843B0EC34E4A00F22317 /* seq_likelihood.h */,
 				2DF881670D6CDD7600821CA5 /* basic_bull.hpp */,
 				2DF881680D6CDD7600821CA5 /* bull_io.cpp */,
 				2DF881690D6CDD7600821CA5 /* bull_io.hpp */,
@@ -223,6 +231,8 @@
 				2DF8814B0D6CDD6700821CA5 /* util.cpp */,
 				2DF8814C0D6CDD6700821CA5 /* util.hpp */,
 				2DF8814E0D6CDD6700821CA5 /* xbull.hpp */,
+				BF5285130EC39D8800F22317 /* bull_mcmc.h */,
+				BF5285140EC39D8800F22317 /* bull_mcmc.cpp */,
 			);
 			name = src;
 			path = ../../src;
@@ -271,9 +281,11 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "bullxcode" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 08FB7794FE84155DC02AAC07 /* bullxcode */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8DD76F620486A84900D96B5E /* bullxcode */,
 			);
@@ -306,6 +318,8 @@
 				2DF881940D6CDD7600821CA5 /* like_attributes.cpp in Sources */,
 				2DF881960D6CDD7600821CA5 /* lin_alg.cpp in Sources */,
 				2DF881980D6CDD7600821CA5 /* main.cpp in Sources */,
+				BF52843C0EC34E4A00F22317 /* seq_likelihood.c in Sources */,
+				BF5285150EC39D8800F22317 /* bull_mcmc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,11 +334,17 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = $NCL_ROOT;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				HEADER_SEARCH_PATHS = (
+					$NCL_BUILD,
+					$NCL_ROOT,
+				);
 				INSTALL_PATH = "$(HOME)/bin";
 				LIBRARY_SEARCH_PATHS = $NCL_LIB_DIR;
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../../ncl-2.1.04/lib/ncl\"";
 				OTHER_LDFLAGS = "-lncl";
 				PRODUCT_NAME = bullxcode;
+				USER_HEADER_SEARCH_PATHS = "/Users/tracyh/ncl_svn/branches/build/** /Users/tracyh/Code/MTH_sources/cPhyP/trunk/** /Users/tracyh/ncl_svn/branches/build/installed/include/**";
 				ZERO_LINK = YES;
 			};
 			name = Debug;
@@ -335,31 +355,47 @@
 				ARCHS = i386;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
-				HEADER_SEARCH_PATHS = $NCL_ROOT;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				HEADER_SEARCH_PATHS = (
+					$NCL_BUILD,
+					$NCL_ROOT,
+				);
 				INSTALL_PATH = "$(HOME)/bin";
 				LIBRARY_SEARCH_PATHS = $NCL_LIB_DIR;
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../../ncl-2.1.04/lib/ncl\"";
 				OTHER_LDFLAGS = "-lncl";
 				PRODUCT_NAME = bullxcode;
+				USER_HEADER_SEARCH_PATHS = "/Users/tracyh/ncl_svn/branches/build/** /Users/tracyh/Code/MTH_sources/cPhyP/trunk/** /Users/tracyh/ncl_svn/branches/build/installed/include/**";
 			};
 			name = Release;
 		};
 		1DEB923608733DC60010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				USER_HEADER_SEARCH_PATHS = "/Users/tracyh/Code/MTH_sources/cPhyP/trunk/** /Users/tracyh/ncl_svn/branches/build/installed/include/**";
 			};
 			name = Debug;
 		};
 		1DEB923708733DC60010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				USER_HEADER_SEARCH_PATHS = "/Users/tracyh/Code/MTH_sources/cPhyP/trunk/** /Users/tracyh/ncl_svn/branches/build/installed/include/**";
 			};
 			name = Release;
 		};

@@ -97,7 +97,7 @@ void SSRFCodonSubModSet::freeMemory()
 	this->mutMatrix = NULL;
 }
 
-void SSRFCodonSubModSet::initialize(
+void SSRFCodonSubModSet::initialize( // TAH port to new inf bull
 	const DblVector & gtrp, /* at least N_MUT_PARAMS doubles long freq(A,C,G) r(AC, AG, AT, CG, CT, GT), pMultHit */
 	const DblMatrix & setofSSRFparams, /* full size=nm*21 */
 	const DblVector & multipliers,
@@ -708,7 +708,7 @@ void SSRFCodonSubMod::RecalculateMutMatrix()
 	
 void SSRFCodonSubMod::CalculateQ(void)
 {	
-	sharedBrLenInterpreter->val-=SSRkContrib/nCodonsInProtein; //subtract out contribution of old qmatrix to mean rate of change
+	sharedBrLenInterpreter->val-= SSRkContrib/nCodonsInProtein; //subtract out contribution of old qmatrix to mean rate of change
 	
 	double *qm,tempx;
 	double *codF;
@@ -859,7 +859,7 @@ void SSRFCodonSubMod::CalculateQ(void)
 		}
 #endif
 	SSRkContrib=CalculateBeta();
-	sharedBrLenInterpreter->val+=SSRkContrib/nCodonsInProtein; //add in the contribution of the new qmatrix to mean rate of change
+	sharedBrLenInterpreter->val += SSRkContrib/nCodonsInProtein; //add in the contribution of the new qmatrix to mean rate of change
 	/*ofstream tempout("Bullout",ios::app);
 	tempout<<nstates<<endl;
 	for (unsigned i=0; i < nstates; i++)
