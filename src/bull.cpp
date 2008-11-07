@@ -308,7 +308,7 @@ void BullShell::Run(const char *infn)
 			cmd.append(NxsString::GetEscaped(sfn));
 			handleOneLineCommand(cmd);
 		}
-		while ( !quit_now ) { // TAH 9/30/2008 this is broken changes "exec filen.nex" to "; exec; end;"
+		while ( !quit_now ) { // TAH 9/30/2008: This is broken. It changes "exec file.nex" to "; exec ; end;" and gives an error
 			cerr << endl;
 			cerr << "BullShell> ";
 			cmd.clear();

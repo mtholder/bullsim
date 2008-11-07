@@ -1,0 +1,1 @@
+#ifndef MTHEXCEPTION#define MTHEXCEPTION#include "nxsstring.h"class  MTHException {	public:	nxsstring msg;	MTHException(const char *m)	{		msg=m;		}};#endif

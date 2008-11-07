@@ -1,0 +1,1 @@
+#ifndef _ENCODED_CHARS#define _ENCODED_CHARSclass EncodedChars{	short *Data;	public:	int nchar;	EncodedChars(int n, short *c){		nchar=n;		Data=c;		}	~EncodedChars() {		delete [] Data;		}			int GetNchar() {return nchar;}	short *GetDataPtr() 	{return Data;}};#endif

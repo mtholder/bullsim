@@ -1,0 +1,1 @@
+#ifndef _CHAR_STATES#define _CHAR_STATESclass CharStates{	public:	int GetNchar() {return 1;}};#endif
