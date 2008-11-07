@@ -1,9 +1,6 @@
 // This file is part of BULL, a program for phylogenetic simulations
 // most of the code was written by Mark T. Holder.
 
-
-// this is the chimnebull branch
-
 //	This program is for internal use by the lab of Dr. Tandy Warnow only.
 //	Do not redistribute the code.  It is distributed in the hope that it will be useful,
 //	but WITHOUT ANY WARRANTY; without even the implied warranty of
