@@ -1,5 +1,5 @@
 // This file is part of BULL, a program for phylogenetic simulations
-// most of the code was written by Mark T. Holder.
+// most of the code was written by Mark T. Holder. T
 
 //	This program is for internal use by the lab of Dr. Tandy Warnow only.
 //	Do not redistribute the code.  It is distributed in the hope that it will be useful,
