@@ -15,3 +15,35 @@ Some code (as noted in the code) was taken from MrBayes (John Huelsenbeck and
     Fredrik Ronquist), PAML (Ziheng Yang), and NCL (Paul Lewis). Some of the 
     code derived MrBayes was originally written by David Swofford.
        
+
+Compilation:
+    1. download and install NCL version 2.1.
+    2. set an env variable to the absolute path of the location that you used
+        as a prefix to NCL's configure (by default the prefix is /usr/local). 
+        Call this variable NCL_INSTALL_PREFIX (it is used in the configure
+        invocation of bullSim below).
+    3. download and install autotools (autoconf and automake).
+    4. from the top of the bullSim directory do the following:
+
+$ mkdir build
+$ sh bootstrap.sh
+$ cd build
+$ ../configure --prefix=`pwd`/installed --with-ncl=$NCL_INSTALL_PREFIX/installed
+$ make
+$ make install
+
+To run the example simulation file, then use:
+
+$ ./installed/bin/bullSim ../test/cytb-sim.nex
+
+
+
+Usage:
+    bullSim <file name> 
+    
+See the BULL block in test/cytb-sim.nex for the syntax of the simulation command.
+
+Note that the code in src/oldsrc is a modified a version of the code used for 
+    ML inference of the parameters for the cytochrome b (it has been a while since
+    this code was used or tested, so it is possible that it will take some
+    work to resurrect the inference functionality).
