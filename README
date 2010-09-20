@@ -1,0 +1,14 @@
+This project contains modifications to the source code for the BULL simulator
+    used in:
+    
+        Holder, Zwickl, and Dessimoz. "Evaluating the robustness of phylogenetic
+            methods to among-site variability in substitution processes."
+            Philos Trans R Soc Lond, B, Biol Sci (2008) 4013-4021
+
+
+Most of the code was by Mark Holder or Tracy Heath.
+
+Some code (as noted in the code) was taken from MrBayes (John Huelsenbeck and
+    Fredrik Ronquist), and PAML (Ziheng Yang). Some of the code in MrBayes was
+    originally written by David Swofford.
+       
