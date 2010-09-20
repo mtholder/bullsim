@@ -8,7 +8,10 @@ This project contains modifications to the source code for the BULL simulator
 
 Most of the code was by Mark Holder or Tracy Heath.
 
+All of Mark Holder's code contributions to Bull are released under the GNU
+    Public License.
+ 
 Some code (as noted in the code) was taken from MrBayes (John Huelsenbeck and
-    Fredrik Ronquist), and PAML (Ziheng Yang). Some of the code in MrBayes was
-    originally written by David Swofford.
+    Fredrik Ronquist), PAML (Ziheng Yang), and NCL (Paul Lewis). Some of the 
+    code derived MrBayes was originally written by David Swofford.
        
