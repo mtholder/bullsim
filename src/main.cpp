@@ -43,7 +43,6 @@ int main(int argc, char* argv[]) {
 	else if (argc > 1) {
 		infile = argv[1];
 	}
-	
 	SetDefaults();
 	
 	bull::BullKernel kernel;

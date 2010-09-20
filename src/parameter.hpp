@@ -43,6 +43,7 @@
 #if defined HAVE_CONFIG_H && HAVE_CONFIG_H
 #	include <config.h>
 #endif 
+#include <cassert>
 
 #include "basic_bull.hpp"
 #include "mth_exception.hpp"

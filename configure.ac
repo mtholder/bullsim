@@ -15,7 +15,7 @@ AC_PROG_CXX
 # required because we are building a library 
 AC_PROG_RANLIB
 AC_PROG_INSTALL
-
+AC_PROG_LIBTOOL
 
 
 # Checks for libraries.
@@ -96,7 +96,7 @@ elif test "x$GCC" = "xyes" ; then
 		CXXFLAGS_OPTIM_SPEED="-O3 -ffast-math -funroll-loops"
 	fi
 	case "$build_os" in
-	 	darwin*) CXXFLAGS="$CXXFLAGS -Wno-long-double" ;;
+	 	darwin*) CXXFLAGS="$CXXFLAGS " ;;
 	 	*) CXXFLAGS="$CXXFLAGS -fsigned-char";;
 	esac	
 fi

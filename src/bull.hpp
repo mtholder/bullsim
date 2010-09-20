@@ -1,5 +1,5 @@
 // This file is part of BULL, a program for phylogenetic simulations
-// most of the code was written by Mark T. Holder. T
+// most of the code was written by Mark T. Holder.
 
 //	This program is for internal use by the lab of Dr. Tandy Warnow only.
 //	Do not redistribute the code.  It is distributed in the hope that it will be useful,
@@ -91,7 +91,7 @@ class BullShell:  public NxsBlock, public BullListener
 		void processNexusBlocks(std::list<NxsBlock*> &);
 		
 		void processAssumptionsBlock(NxsAssumptionsBlock *);
-		void processCharactersBlock(NxsCharactersBlockAPI *); 
+		void processCharactersBlock(NxsCharactersBlockAPI *);
 		void processTaxaBlock(NxsTaxaBlockAPI *);
 		void processTreesBlock(NxsTreesBlockAPI *);
 		bool readFile(const std::string &filepath, const bool treesBlockOnly = false);
